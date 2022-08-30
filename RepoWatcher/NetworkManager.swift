@@ -36,7 +36,8 @@ class NetworkManager{
         
         //Try to decode the data that was pulled
         do{
-            return try decoder.decode(Repository.self, from: data)
+            let codingData = try decoder.decode(Repository.CodingData.self, from: data)
+            return codingData.repo
         } catch {
             //This error will probably show if there is a mistype in the repositories names.
             throw NetworkError.invalidRepoDATA
