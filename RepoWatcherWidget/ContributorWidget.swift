@@ -38,7 +38,39 @@ struct ContributorEntryView : View {
     var entry: ContributorEntry
     
     var body: some View {
-        Text(entry.date.formatted())
+        VStack{
+            RepoMediumView(repo: Repository.placeHolderB)
+            VStack(alignment: .leading){
+                Text("Top contributors")
+                    .font(.caption2)
+                    .foregroundColor(.secondary)
+                HStack(){
+                    ContributorView()
+                    ContributorView()
+                }
+                HStack(){
+                    ContributorView()
+                    ContributorView()
+                }
+            }.padding()
+        }
+        
+    }
+}
+
+struct ContributorView : View {
+    var body: some View{
+        HStack{
+            Circle()
+                .frame(width:50, height: 50)
+            VStack(alignment: .leading){
+                Text("Namey McNamePants")
+                    .font(.caption2)
+                Text("999")
+                    .font(.caption2)
+                    .foregroundColor(.secondary)
+            }
+        }
     }
 }
 
