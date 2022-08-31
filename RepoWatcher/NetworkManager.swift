@@ -42,7 +42,31 @@ class NetworkManager{
             //This error will probably show if there is a mistype in the repositories names.
             throw NetworkError.invalidRepoDATA
         }
+    }
+    
+    func getContributors(atUrl urlString: String) async throws -> [Contributor] {
         
+        //Make sure the URL is a real url
+        guard let url = URL(string: urlString) else {
+            throw NetworkError.invalidURL
+        }
+        
+        //run a async url session
+        let (data, response) = try await URLSession.shared.data(from: url)
+        
+        //check that the response is good
+        guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+            throw NetworkError.invalidResponse
+        }
+        
+        //Try to decode the data that was pulled
+        do{
+            let codingData = try decoder.decode([Contributor.CodingData].self, from: data)
+            return codingData.map {$0.contributor}
+        } catch {
+            //This error will probably show if there is a mistype in the repositories names.
+            throw NetworkError.invalidRepoDATA
+        }
     }
     
     //This function is setup to get an image from a urlSession, but if it gets nothing back from the session, it just returns nil because it means we just don't have an image so we will put in a placeholder instead.

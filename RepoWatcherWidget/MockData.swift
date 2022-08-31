@@ -15,14 +15,27 @@ extension Repository{
                                         watchers: 123,
                                         openIssues: 55,
                                         pushedAt: "2021-08-09T18:19:30Z",
-                                        avatarData: Data())
+                                        avatarData: Data(),
+                                        contributors: [
+                                            Contributor(login: "Boaty", avatarUrl: "", contributions: 999, avatarData: Data()),
+                                            Contributor(login: "Mc", avatarUrl: "", contributions: 1, avatarData: Data()),
+                                            
+                                        ]
+                                        
+    )
     
     static let placeHolderB = Repository(name: "Second Repo",
-                                        owner: Owner(avatarUrl: ""),
-                                        hasIssues: false,
-                                        forks: 20,
-                                        watchers: 999,
-                                        openIssues: 0,
-                                        pushedAt: "2022-08-09T18:19:30Z",
-                                        avatarData: Data())
+                                         owner: Owner(avatarUrl: ""),
+                                         hasIssues: false,
+                                         forks: 20,
+                                         watchers: 999,
+                                         openIssues: 0,
+                                         pushedAt: "2022-08-09T18:19:30Z",
+                                         avatarData: Data(),
+                                         contributors: [
+                                            Contributor(login: "Boaty", avatarUrl: "", contributions: 999, avatarData: Data()),
+                                            Contributor(login: "Mc", avatarUrl: "", contributions: 1, avatarData: Data()),
+                                            
+                                         ]
+    )
 }

@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		4C0FEF6928BD98350004E3F9 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0FEF6828BD98350004E3F9 /* MockData.swift */; };
 		4C0FEF6A28BD98350004E3F9 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0FEF6828BD98350004E3F9 /* MockData.swift */; };
+		4C3561BB28BFB4E000B08328 /* ContributorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3561BA28BFB4E000B08328 /* ContributorView.swift */; };
+		4C3561BC28BFB58D00B08328 /* ContributorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3561BA28BFB4E000B08328 /* ContributorView.swift */; };
+		4C3561BE28BFB74E00B08328 /* Contributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3561BD28BFB74E00B08328 /* Contributor.swift */; };
+		4C3561BF28BFB74E00B08328 /* Contributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3561BD28BFB74E00B08328 /* Contributor.swift */; };
 		4C4D8FC828BCE4F100598E09 /* RepoWatcherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4D8FC728BCE4F100598E09 /* RepoWatcherApp.swift */; };
 		4C4D8FCA28BCE4F100598E09 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4D8FC928BCE4F100598E09 /* ContentView.swift */; };
 		4C4D8FCC28BCE4F200598E09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C4D8FCB28BCE4F200598E09 /* Assets.xcassets */; };
@@ -54,6 +58,8 @@
 
 /* Begin PBXFileReference section */
 		4C0FEF6828BD98350004E3F9 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		4C3561BA28BFB4E000B08328 /* ContributorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorView.swift; sourceTree = "<group>"; };
+		4C3561BD28BFB74E00B08328 /* Contributor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contributor.swift; sourceTree = "<group>"; };
 		4C4D8FC428BCE4F100598E09 /* RepoWatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepoWatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4D8FC728BCE4F100598E09 /* RepoWatcherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoWatcherApp.swift; sourceTree = "<group>"; };
 		4C4D8FC928BCE4F100598E09 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -118,6 +124,7 @@
 				4C4D8FC728BCE4F100598E09 /* RepoWatcherApp.swift */,
 				4C4D8FC928BCE4F100598E09 /* ContentView.swift */,
 				4C4D8FEC28BCFBED00598E09 /* Repository.swift */,
+				4C3561BD28BFB74E00B08328 /* Contributor.swift */,
 				4C4D8FF028BD02FF00598E09 /* NetworkManager.swift */,
 				4C4D8FCB28BCE4F200598E09 /* Assets.xcassets */,
 				4C4D8FCD28BCE4F200598E09 /* Preview Content */,
@@ -150,6 +157,7 @@
 				4C862BFD28BEB89600694ADF /* bobWidget.swift */,
 				4C4D8FE028BCE51400598E09 /* CompactRepoWidget.swift */,
 				4C0FEF6828BD98350004E3F9 /* MockData.swift */,
+				4C3561BA28BFB4E000B08328 /* ContributorView.swift */,
 				4CC344E728BD44A1009B710F /* RepoMediumView.swift */,
 				4C4D8FE228BCE51400598E09 /* Assets.xcassets */,
 				4C4D8FE428BCE51400598E09 /* Info.plist */,
@@ -260,6 +268,8 @@
 			files = (
 				4C4D8FF128BD02FF00598E09 /* NetworkManager.swift in Sources */,
 				4C4D8FCA28BCE4F100598E09 /* ContentView.swift in Sources */,
+				4C3561BE28BFB74E00B08328 /* Contributor.swift in Sources */,
+				4C3561BB28BFB4E000B08328 /* ContributorView.swift in Sources */,
 				4C4D8FC828BCE4F100598E09 /* RepoWatcherApp.swift in Sources */,
 				4C4D8FED28BCFBED00598E09 /* Repository.swift in Sources */,
 				4C0FEF6928BD98350004E3F9 /* MockData.swift in Sources */,
@@ -271,10 +281,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C862BFA28BE886400694ADF /* ContributorWidget.swift in Sources */,
+				4C3561BF28BFB74E00B08328 /* Contributor.swift in Sources */,
 				4C862BFE28BEB89600694ADF /* bobWidget.swift in Sources */,
 				4C4D8FF228BD02FF00598E09 /* NetworkManager.swift in Sources */,
 				4CC344E828BD44A1009B710F /* RepoMediumView.swift in Sources */,
 				4C4D8FE128BCE51400598E09 /* CompactRepoWidget.swift in Sources */,
+				4C3561BC28BFB58D00B08328 /* ContributorView.swift in Sources */,
 				4C862BF828BE867D00694ADF /* WidgetBundle.swift in Sources */,
 				4C4D8FEF28BCFE6400598E09 /* Repository.swift in Sources */,
 				4C0FEF6A28BD98350004E3F9 /* MockData.swift in Sources */,
